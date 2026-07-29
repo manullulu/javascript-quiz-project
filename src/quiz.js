@@ -41,5 +41,4 @@ class Quiz {
        return  this.questions.reduce((acc, n) => {
             return acc + n.difficulty }, 0) / this.questions.length;
     }
-
 }
