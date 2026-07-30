@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let seconds = Math.floor(quiz.timeRemaining % 60);
     seconds = seconds.toString().padStart(2, "0");
     timeRemainingContainer.innerText = `${minutes}:${seconds}`;
-    if (quiz.timeRemaining < 0) {
+    if (quiz.timeRemaining < 0) { // while this is negative run the above code on the set interval 1000;
       clearInterval(time);
       showResults();
     }
